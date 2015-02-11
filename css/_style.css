@@ -1,0 +1,369 @@
+body.zhi{
+  padding-top: 46px;
+}
+
+body,input,textarea,select,button{
+  line-height: 1.7;
+  font-size: 13px;
+  padding:0;
+  margin:0;
+  color: #222;
+  word-wrap:break-word;
+}
+
+.zu-top{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  height: 45px;
+  background: #0666c5;
+  background-color: #0767c8;
+  background-image: -webkit-linear-gradient(top,#086ed5,#055db5);
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #044e97;
+  box-shadow: 0 1px 2px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.15);
+}
+
+.zu-top .zg-wrap{
+  position: relative;
+  height: inherit;
+}
+
+.zg-wrap{
+  width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.zu-top-link-logo{
+  background-image: url(../images/new_logo.png);
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+  color: #fff;
+  display: block;
+  width: 61px;
+  height: 100%;
+  float: left;
+  text-indent: -9999px;
+}
+
+a{
+  color: #259;
+  text-decoration: none;
+}
+
+.top-nav-profile{
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 120px;
+  z-index: 10;
+}
+
+.top-nav-profile .zu-top-nav-userinfo{
+  position: relative;
+  height: 45px;
+  line-height: 45px;
+  text-indent: 46px;
+  color: #fff;
+  text-decoration: none;
+  border-top: 0;
+  background: transparent;
+  box-shadow: none;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
+}
+
+.top-nav-profile a{
+  display: block;
+  width: 120px;
+  background-color: #095fb3;
+  text-shadow:0 1px 1px rgba(0,0,0,.12);
+  font-size: 14px;
+}
+
+.zu-top-nav-userinfo .avatar{
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border:1px solid rgba(0,0,0,.1);
+  box-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+
+.top-nav-profile .top-nav-dropdown{
+  top: 46px;
+}
+
+.top-nav-dropdown{
+  display: none;
+  margin:0;
+  position: absolute;
+  left: 0;
+}
+
+ul,ol,li,p{
+  padding: 0;
+  margin:0;
+}
+
+.top-nav-dropdown li{
+  margin: 0;
+  list-style: none;
+}
+
+.top-nav-dropdown li:first-child>a{
+  border-top:0;
+}
+
+.top-nav-profile .top-nav-dropdown a{
+  width: 120px;
+}
+
+.top-nav-dropdown li a{
+  display: block;
+  width: 145px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  text-decoration: none;
+  border-top:1px solid #0d5aa5;
+  box-shadow: 0 1px 1px rgba(0,0,0,.4);
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.top-nav-dropdown .zg-icon{
+  width: 20px;
+  height: 20px;
+  margin:0 11px 0 15px;
+  vertical-align: -7px;
+}
+
+
+.icon,.zg-icon{
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/sprites-1.9.2.png);
+  background: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.zg-icon-dd-home{
+  background-image: url(../images/sprites-1.9.2.png);
+  background-position: -6px -7px;
+}
+
+.zg-icon-dd-pm{
+  background-image: url(../images/sprites-1.9.2.png);
+  background-position: -6px -34px;
+}
+
+.zg-icon-dd-settings{
+  background-image: url(../images/sprites-1.9.2.png);
+  background-position: -6px -60px;
+}
+
+.zg-icon-dd-logout{
+  background-image: url(../images/sprites-1.9.2.png);
+  background-position: -6px -87px;
+}
+
+.zu-top-search{
+  position: relative;
+  margin:7px 0 0 12px;
+  float: left;
+}
+
+.zu-top-search-form{
+  float: left;
+  width: 367px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.form-with-magnify{
+  position: relative;
+}
+
+input[type=text],input[type=password]:focus{
+  -webkit-appearance:none;
+}
+
+.zu-top-search-input{
+  color: #999;
+  background: transparent;
+  padding:7px 10px;
+  border:0 none;
+  font-size: 14px;
+  outline: medium none;
+  overflow: hidden;
+  width: 100%;
+  box-sizing:border-box;
+  line-height: 17px;
+  border:1px solid #045bb3;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.0),0 1px 0 rgba(255,255,255,.1);
+  background-color: #e1eaf2;
+  color: #49525c;
+  transition:all .2s ease-in-out;
+}
+
+.magnify-button{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 32px;
+  cursor: pointer;
+  border:0;
+  background: 0;
+}
+
+.icon-magnify-q{
+  background-image: url(../images/sprites-1.9.2.png);
+  background-position: -239px -60px;
+  width: 13px;
+  height: 15px;
+}
+
+.zu-top-add-question{
+  margin: 0 0 0 6px;
+  background: #0d77e4;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 14px;
+  width: 66px;
+  height: 32px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  border:1px solid #045bb2;
+  cursor: pointer;
+}
+
+.zu-top-nav{
+  display: inline-block;
+  position: relative;
+}
+
+.zu-top-nav-ul{
+  /*display: inline-block;*/
+  margin: 0 0 0 18px;
+  display: inline-block;
+}
+
+.zu-top-nav-li{
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  float: left;
+}
+
+.top-nav-noti{
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.zu-top-nav-link{
+  width: 54px;
+  height: 45px;
+  color: #eee;
+  font-size: 14px;
+  display: block;
+  line-height: 45px;
+}
+
+.zu-top-nav-link:hover{
+  color: #fff;
+}
+
+.top-nav-noti:hover{
+  color: #fff;
+  cursor: pointer;
+}
+
+.zu-top-nav-li.current{
+  background-color: #075fb6;
+  box-shadow: inset 0 0 2px rgba(0,0,0,.2)
+}
+
+.tripple{
+  display: inline-block;
+  left: 144px;
+  width: 25px;
+  background: url(../images/sprites-1.9.2.png);
+}
+
+.slider-wrapper{
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+}
+
+.slider{
+  width: 900px;
+  margin: 0;
+  padding: 0;
+}
+
+.slider .slide{
+  float: left;
+  width: 300px;
+  height: 180px;
+  list-style: none;
+}
+
+.slider .slide img{
+  width: 300px;
+  height: 180px;
+}
+
+.slide a{
+  text-decoration: none;
+  text-align: center;
+}
+
+.slide span{
+  color: #fff;
+  position: absolute;
+  float: left;
+  width: 300px;
+  height: 24px;
+  margin: 156px 0 0 0px;
+  background:rgba(0,0,0, 0.8) none repeat scroll 0 0 !important;
+}
+
+.control {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.control span {
+  float: left;
+  padding: 3px 6px;
+  background: rgba(0,0,0,.7);
+  color: #fff;
+  cursor: pointer;
+}
+
+.control span.active{
+  background: rgba(255,0,0,.7);
+}
+
+.clearfix:after{
+  content: '.';
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
