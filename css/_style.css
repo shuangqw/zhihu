@@ -1,4 +1,4 @@
-body.zhi{
+body.zu{
   padding-top: 46px;
 }
 
@@ -9,6 +9,13 @@ body,input,textarea,select,button{
   margin:0;
   color: #222;
   word-wrap:break-word;
+}
+
+h1,h2,h3,h4,h5{
+  font-weight: 700;
+  font-size: 14px;
+  margin:0;
+  outline: 0;
 }
 
 .zu-top{
@@ -31,11 +38,7 @@ body,input,textarea,select,button{
   height: inherit;
 }
 
-.zg-wrap{
-  width: 960px;
-  margin: 0 auto;
-  clear: both;
-}
+
 
 .zu-top-link-logo{
   background-image: url(../images/new_logo.png);
@@ -303,6 +306,287 @@ input[type=text],input[type=password]:focus{
   background: url(../images/sprites-1.9.2.png);
 }
 
+.zu-main{
+  position: relative;
+  z-index: 2;
+  padding: 25px 0 50px;
+  min-height: 340px;
+}
+
+
+.zg-wrap{
+  width: 960px;
+  margin: 0 auto;
+  clear:both;
+}
+
+
+.left{
+  float: left;
+  width: 610px;
+}
+
+.right{
+  float: right;
+  width: 270px;
+}
+
+.zg-section{
+  margin: 0 0 10px;
+}
+
+.zg-icon-feedlist{
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/sprites-1.9.2.png);
+  background-position: -71px -88px;
+  margin-right: 5px;
+  vertical-align: -4px;
+}
+
+#zh-home-list-title{
+  color: #666;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.zg-right{
+  float: right;
+}
+
+.zm-noti-cleaner-setting{
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.zg-icon-settings{
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/sprites-1.9.2.png);
+  background-position: -88px -148px;
+  margin-right: 1px;
+}
+
+.zg-link-gray-normal{
+  color: #999;
+}
+
+.zu-main-feed-con{
+  border-top: 1px solid #ccc;
+}
+
+.feed-item{
+  padding: 10px 0;
+  position: relative;
+}
+
+.feed-item .avatar{
+  float: left;
+  margin-top: 3px;
+}
+
+.feed-item .avatar,.feed-item a,.feed-item img{
+  width: 38px;
+  height: 38px;
+}
+
+.feed-main{
+  margin: 0 0 0 48px;
+}
+
+.feed-main .source{
+  color: #999;
+}
+
+.feed-main .source a{
+  color: #999;
+}
+
+.feed-main .source a:hover{
+  color: #259;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.feed-main .content h2{
+  margin-right: 20px;
+}
+
+.feed-main .entry-body{
+  margin-top: 3px;
+  position: relative;
+}
+
+.zm-item-vote{
+  position: absolute;
+  left: -48px;
+  text-align: center;
+}
+
+a.zm-item-vote-count{
+  display: block;
+  color: #698ebf;
+  height: 24px;
+  width: 38px;
+  line-height: 24px;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  background: #eff6fa;
+  font-weight: 500;
+}
+
+.feed-item .zm-votebar{
+  display: none;
+}
+
+.zm-votebar{
+  float: left;
+  margin-left: -48px;
+  /*text-align: center;*/
+}
+
+.zm-votebar .up{
+  height: 44px;
+}
+
+.zm-votebar .down{
+  margin:5px 0 0;
+}
+
+.zm-votebar .up,.zm-votebar .down{
+  display: block;
+  color: #698ebf;
+  line-height: 24px;
+  width: 38px;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  background: #eff6fa;
+  font-weight: 500;
+  position: relative;
+}
+
+.up .vote-arrow,.down .vote-arrow{
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+}
+
+.zm-votebar .up .vote-arrow{
+  border-top-width: 0;
+  border-bottom-color: #698ebf;
+  border-top-style: solid;
+}
+
+.zm-votebar .label{
+  display: block;
+  text-indent: -9999px;
+}
+
+.zm-votebar .down .label{
+  position: absolute;
+}
+
+.zm-votebar .count{
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 100%;
+}
+
+.zm-votebar .down .vote-arrow{
+  border-bottom-width: 0;
+  border-top-color: #698ebf;
+  border-bottom-color: solid;
+}
+
+.zm-item-answer-author-info{
+  margin-bottom: 2px;
+}
+
+.zm-item-answer-author-wrap a{
+  color: #000;
+}
+
+.zm-item-answer-author-wrap a:hover{
+  color: #259;
+  text-decoration: underline;
+}
+
+.zm-item-vote-info{
+  margin: 3px 0;
+  font-size: .9em;
+  color: #999;
+}
+
+.zm-item-vote-info a{
+  color: #999;
+}
+
+.zm-item-vote-info a:hover{
+  color: #259;
+  text-decoration: underline;
+}
+
+
+.hidden{
+  display: none;
+}
+
+.zh-summary{
+  position: relative;
+  cursor: pointer;
+}
+
+.clearfix:before,.clearfix:after{
+  display: table;
+  content: "";
+}
+
+.clearfix:after{
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .slider-wrapper{
   position: relative;
   overflow: hidden;
@@ -367,3 +651,12 @@ input[type=text],input[type=password]:focus{
   line-height: 0;
   clear: both;
 }
+
+/*.icon,.zg-icon{
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/sprites-1.9.2.png);
+  background: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}*/
