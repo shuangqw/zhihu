@@ -263,7 +263,6 @@ input[type=text],input[type=password]:focus{
 }
 
 .zu-top-nav{
-  display: inline-block;
   position: relative;
 }
 
@@ -1051,13 +1050,35 @@ a.zm-side-nav-link{
   cursor: pointer;
 }
 
+.zu-noti7-popup .zu-top-live-icon{
+  left: 144px;
+  width: 25px;
+  background:url(../images/sprites-1.9.2.png) no-repeat -228px -186px;
 
+}
 
+.zu-noti7-popup .zu-top-nav-live{
+  width: 315px;
+  left: 52px;
+  top: 48px;
+  border:1px solid #ddd;
+  display: block;
+  border-radius: 5px;
+}
 
+.zu-noti7-popup .zu-top-nav-live-inner{
+  padding: 0;
+  border:0;
+  box-shadow: 0 1px 4px rgba(0,0,0,.3);
+  margin: 0;
+}
 
-
-
-
+.zu-top-nav-live-inner{
+  padding: 10px;
+  border-radius: 5px;
+  border:3px solid #f4f4f4;
+  background: #fff;
+}
 
 
 
