@@ -264,12 +264,16 @@ input[type=text],input[type=password]:focus{
 
 .zu-top-nav{
   position: relative;
+  float: left;
+}
+
+.zu-top-nav-live{
+  float: left;
 }
 
 .zu-top-nav-ul{
-  /*display: inline-block;*/
   margin: 0 0 0 18px;
-  display: inline-block;
+  width: 218px;
 }
 
 .zu-top-nav-li{
@@ -1050,27 +1054,35 @@ a.zm-side-nav-link{
   cursor: pointer;
 }
 
-.zu-noti7-popup .zu-top-live-icon{
+.zu-top-live-icon{
   left: 144px;
   width: 25px;
+  height: 25px;
+  top: -12px;
   background:url(../images/sprites-1.9.2.png) no-repeat -228px -186px;
-
 }
 
-.zu-noti7-popup .zu-top-nav-live{
+.zu-noti7-popup.zu-top-nav-live{
   width: 315px;
   left: 52px;
   top: 48px;
   border:1px solid #ddd;
   display: block;
-  border-radius: 5px;
 }
 
-.zu-noti7-popup .zu-top-nav-live-inner{
-  padding: 0;
-  border:0;
-  box-shadow: 0 1px 4px rgba(0,0,0,.3);
-  margin: 0;
+.zu-top-nav-live{
+  position: absolute;
+  left: 108px;
+  top: 45px;
+  width: 290px;
+  z-index: 9;
+  background: #fff;
+  outline: 0;
+}
+
+.zu-top-nav-live{
+  border-radius: 5px;
+  border:solid 1px #bbb;
 }
 
 .zu-top-nav-live-inner{
@@ -1080,11 +1092,27 @@ a.zm-side-nav-link{
   background: #fff;
 }
 
+.zu-noti7-popup .zu-top-nav-live-inner{
+  padding: 0;
+  border:0;
+  box-shadow: 0 1px 4px rgba(0,0,0,.3);
+  margin: 0;
+}
 
+.zg-clear{
+  height: 1%;
+}
 
+.zg-clear:before,.zg-clear:after{
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
 
-
-
+.zg-clear:after{
+  clear: both;
+}
 
 
 
